@@ -411,7 +411,7 @@ Permissions Manager
 App Directory
 United States
 © 2024 Plaid Inc.
-
+(+/https://dashboard.plaid.com/overview)
 
 
     }
