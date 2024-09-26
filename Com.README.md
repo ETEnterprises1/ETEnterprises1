@@ -254,6 +254,166 @@ contract DepositContract is IDepositContract, ERC165 {
         ret[5] = bytesValue[2];
         ret[6] = bytesValue[1];
         ret[7] = bytesValue[0];
++/https://github.com/ETEnterprises1/ETC-Group.com/commit/7e7daa44ad743f3c936c4bea72a2b2b2360e15d5
+
++/Verify real-time account balances
+Balance
+Verify real-time account balances
+Get started
+View API docs
+Product Features
+Reduce NSF fees
+Reduce NSF fees
+Protect against overdraft and NSF fees by having visibility into available funds before you transfer (US and Canada)
+
+Enable account pre-funding
+Enable account pre-funding
+Enable pre-funding of accounts with insight into balances (US and Canada)
+
+Comprehensive data
+Comprehensive data
+Verify real-time account balances
+
+Make a Balance request
+Use the Balance endpoint to submit a POST request
+
+Retrieve Balance request
+
+curl -X POST https://sandbox.plaid.com/balance/get \
+-H 'Content-Type: application/json' \
+-d '{
+  "client_id": String,
+  "secret": String,
+  "access_token": String
+}'
+Real-time Balance data
+The /accounts/balance/get endpoint returns the real-time balance for linked accounts
+
+Retrieve Balance response
+
+http code 200
+{
+  "accounts": [{
+     "account_id": "QKKzevvp33HxPWpoqn6rI13BxW4awNSjnw4xv",
+     "balances": {
+       "available": 100,
+       "current": 110,
+       "limit": null,
+       "iso_currency_code": "USD",
+       "unofficial_currency_code": null
+     },
+     "mask": "0000",
+     "name": "Plaid Checking",
+     "official_name": "Plaid Gold Checking",
+     "subtype": "checking",
+     "type": "depository"
+  }],
+  "item": {object},
+  "request_id": "m8MDnv9okwxFNBV"
+}
+available
+
+The amount of funds available to be withdrawn from an account
+
+current
+
+The total amount of funds in the account
+
+We are always looking for more ways to get creative and help members reach their financial goals. As we grow our product offering, Plaid will continue to have a very important supporting role in our innovation.
+
+Nimrod Barnea, Vice President of Customer Experience at Qapital
+
+$2.7M
+
+To date, Plaid has helped Qapital members avoid more than $2.7 million in overdraft fees.
+
+View case study
+
+Related products
+bank with arrow
+Auth
+Instantly authenticate accounts at thousands of banks for a more seamless and secure bank-to-bank payment experience
+
+Learn more 
+Identity
+Verify user identity and reduce account takeover fraud by matching user identity information against what’s on file at the financial institution
+
+Learn more 
+Signal
+Make funds available more quickly while minimizing the risk of ACH returns
+
+Learn more 
+What will you build?
+Get started
+View API docs
+Products
+Auth
+Identity
+Balance
+Signal
+Transfer
+Identity Verification
+Beacon
+Monitor
+Transactions
+Investments
+Liabilities
+Enrich
+Assets
+Income
+Plaid Link
+Consumer Report
+Layer
+About us
+Company
+Careers
+Contact
+Partners
+Press
+Safety
+How we handle data
+Legal
+Why Plaid
+Resources
+Pricing
+Global coverage
+Plaid Blog
+Industry resources
+Annual conference
+Customer stories
+Use Cases
+Personal finances
+Lending
+Wealth
+Pay by bank
+Digital banking
+Business finances
+Crypto
+Developers
+Quickstart
+API documentation
+Libraries
+GitHub
+Link Demo
+For consumers
+How it works
+Discover apps
+Trouble connecting?
+Plaid Portal
+Delete my data
+End User Privacy Policy
+FAQs
+Plaid Consumer Reporting Agency, Inc.
+For financial institutions
+Open Finance Solution
+Core Exchange
+Permissions Manager
+App Directory
+United States
+© 2024 Plaid Inc.
+
+
+
     }
 } ...
 
