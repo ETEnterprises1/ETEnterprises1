@@ -1,9 +1,7 @@
-
-`B
-"BMO Financial Group"
-B
-"BMO Financial Group"
-'Create new team'
+`<new: <html.doctype/>
+ >for:"bank institution",
+  >name:"BMO Financial Group",
+Create new team'`
 
 'Expand Menu'↓''
 'Search dashboard(↓___________________________↓')
